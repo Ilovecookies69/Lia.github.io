@@ -85,13 +85,18 @@
         </div>
     </div>
 
+    <audio id="background-music" src="/mnt/data/Cup Of Joe - Misteryoso [Lyrics].mp3"></audio>
+
     <script>
         function toggleMessage() {
             var message = document.getElementById("birthdayMessage");
+            var music = document.getElementById("background-music");
             if (message.style.display === "none") {
                 message.style.display = "block";
+                music.play();
             } else {
                 message.style.display = "none";
+                music.pause();
             }
         }
     </script>
